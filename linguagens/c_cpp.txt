@@ -146,3 +146,33 @@ EX:
 	   cout << g;
 	   return 0;
 	}	
+
+- OPERADORES EM C
+	Operadores Aritméticos:  +, - , *,  /, %
+	Operadores Relacionais: >, <,  >=, <=, ==, !=
+	Operadores Lógicos: &&, ||, ! 
+	Operadores de Incremento e Decremento: ++, -- 
+	Operadores Compostos de Atribuição: +=  -=  *=  /=  %=
+
+- ENTRADAS E SAÍDAS EM C++
+	Na biblioteca iostream, temos os seguintes objetos:
+    cin -> Este objeto fornece entrada de dados "bufferizada" através do "standard input device", o dispositivo de entrada padrão;
+    cout -> Este objeto fornece saída de dados "bufferizada" através do "standard output device", o dispositivo de saída padrão;
+    cerr -> Este objeto fornece saída de dados não "bufferizada" para o standard error device, o dispositivo de erro padrão, que é inicialmente definido para a tela.
+    clog -> Este objeto fornece saída "bufferizada" através do "standard error device", o dispositivo de erro padrão que é inicialmente definido para a tela.
+    
+    BUFFER
+	Para entendermos um pouco mais sobre Buffer, se faz necessário recordar um pouco sobre o funcionamento da memória e suas operações relacionadas a Buffer.
+	Bufferização é um meio de sincronização entre dispositivos de velocidades diferentes, tais quais memória e dispositivos de armazenamento mecânicos, como discos magnéticos. Para evitar que as operações do dispositivo mais lento interfiram no desempenho do programa pode-se fazer com que os dados sejam colocados em uma memória mais rápida e depois sejam enviadas ao dispositivo mais lento a medida que ele tenha disponibilidade para recebê-los, desta forma temos os seguintes modos de escrita em dispositivos de saída:
+    unbuffered – significa que qualquer mensagem ou dados serão escritos imediatamente. É o caso da escrita no dispositivo cerr;
+    buffered - significa que os dados serão mantidos num buffer de memória até que o dispositivo de destino solicite, ou que um comando de descarregamento seja executado, ou quando o buffer estiver cheio. O problema é que se o programa é interrompido antes do buffer ser escrito esses dados são perdidos.
+
+    cout << "hello";	// mostra a palavra hello no ecrã(monitor)
+	cout << 120; 		// mostra o número 120 no ecrã(monitor)
+	cout << hello;		// mostra o conteúdo do pedaço de memoria a que chamamos de "hello" no ecrã(monitor)
+	cout << "hello, tenho " << age<< " anos de idade"; 	/* mostra a primeira string depois 
+                                                           vai buscar o conteúdo da variável 
+                                                           age de depois a string “anos de idade”
+                                                        */
+
+    
