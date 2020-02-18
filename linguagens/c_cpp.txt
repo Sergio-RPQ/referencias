@@ -1,0 +1,84 @@
+- ESTRUTURA BÁSICA EM C
+arquivo: ola.c
+#include <stdio.h>
+int main() {
+	printf(“Olá mundo!”); 
+	return 0;
+}
+
+- ESTRUTURA BÁSICA EM C++
+arquivo: ola.cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   cout << "Olá mundo!";
+   return 0;
+}
+
+- COMPILAR E EXECUTAR EM C++
+	$ g++ ola.cpp
+	$ ./ola.out
+	Olá mundo!
+- COMPILAR E EXECUTAR EM C
+	$gcc ola.c
+	$./ola.o
+
+- TIPOS BÁSICOS EM C
+char   : armazena caracteres ou números literais Ex: ‘a’    ‘1’  ‘\n’
+int    : armazena números inteiros   Ex.  50,    017
+float  : armazena números com ponto flutuante em precisão simples (até  6 ou 7 dígitos significativos dependendo da máquina)  Ex:   6.5    -12.4    1.2e-3     -0.00013 
+double : armazena números com ponto flutuante em precisão dupla (até 15 ou 16 dígitos significativos dependendo da máquina) Ex:  0.51231298967   -1.3e-15 
+
+MODIFICADORES C
+unsigned : armazena número sem sinal (positivo) Ex  unsigned int  
+short    : reduz os limites de variação Ex . short int 
+long     : amplia os limites de variação   Ex. long int 
+void     : tipo usado em funções para indicar parâmetros ou valores de retorno vazio Ex   int   função-soma(void)
+- TABELA DE VARIÁVEIS, INTERVALOS DE VARIAÇÃO E TOTAL ALOCADO NA MEMÓRIA EM C
+	Tipo de dados Variação Total de Bytes       Utilizados
+	char       	  0    a     255                1 
+	int           -32768   a   32767            2 
+	short int     -128   a   127                1 
+	unsigned int  0    a   65535                2 
+	long int      -4294967296   a    4294967296 4 
+	float Aprox.  6 casas decimais              4 
+	double Aprox. 12 casas de precisão          8 
+	void 		  - 						    0
+
+- TIPOS PRIMITIVOS EM C++
+TIPO	                PALAVRA-CHAVE
+Boolean 	    		bool
+Character 	    		char
+Integer 	    		int
+Floating point 			float
+Double floating point 	double
+Valueless 				void
+Wide character 			wchar_t
+
+- MODIFICADORES EM C++
+	signed
+	unsigned
+	short
+	long
+
+- TABELA DE VARIÁVEIS, INTERVALOS DE VARIAÇÃO E TOTAL ALOCADO EM MEMÓRIA EM C++
+TIPO 	        		LARGURA TIPICA DE BITS 	INTERVALO TÍPICO
+char 					1byte 					-127 to 127 or 0 to 255
+unsigned char 			1byte 					0 to 255
+signed char 			1byte 					-127 to 127
+int 					4bytes 					-2147483648 to 2147483647
+unsigned int 			4bytes 					0 to 4294967295
+signed int 				4bytes 					-2147483648 to 2147483647
+short int 				2bytes 					-32768 to 32767
+unsigned short int 		2bytes 					0 to 65,535
+signed short int 		2bytes 					-32768 to 32767
+long int 				8bytes 					-2,147,483,648 to 2,147,483,647
+signed long int 		8bytes 					same as long int
+unsigned long int 		8bytes 					0 to 4,294,967,295
+long long int 			8bytes 					-(2^63) to (2^63)-1
+unsigned long long int 	8bytes 					0 to 18,446,744,073,709,551,615
+float 					4bytes 	
+double 					8bytes 	
+long double 			12bytes 	
+wchar_t 				2 or 4 bytes 			1 wide character
