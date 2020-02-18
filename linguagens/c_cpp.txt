@@ -48,7 +48,7 @@ void     : tipo usado em funções para indicar parâmetros ou valores de retorn
 
 - TIPOS PRIMITIVOS EM C++
 TIPO	                PALAVRA-CHAVE
-Boolean 	    		bool
+Boolean 	    		bool(true / false)
 Character 	    		char
 Integer 	    		int
 Floating point 			float
@@ -82,3 +82,67 @@ float 					4bytes
 double 					8bytes 	
 long double 			12bytes 	
 wchar_t 				2 or 4 bytes 			1 wide character
+
+- EXEMPLO C++ RETORNO TIPOS
+#include <iostream>
+using namespace std;
+int main() {
+   cout << "Size of char : " << sizeof(char) << endl;
+   cout << "Size of int : " << sizeof(int) << endl;
+   cout << "Size of short int : " << sizeof(short int) << endl;
+   cout << "Size of long int : " << sizeof(long int) << endl;
+   cout << "Size of float : " << sizeof(float) << endl;
+   cout << "Size of double : " << sizeof(double) << endl;
+   cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+   
+   return 0;
+}
+endl 	 -> Gera nova linha ao final, equivale ao \n\r.
+<<   	 -> Operador para passar um valor, podendo ser usado para concatenar strings
+sizeof() -> Função que retorna o tamanho de uma variável ou tipo
+
+- TIPEDEF EM C++
+Pode ser usado para criar um tipo 
+EX: 
+	definição  -> typedef int metros;
+	declaração -> metros distancia;
+
+- TIPO ENUMERAÇÃO EM C++
+	enum cor {vermelho, verde, azul} cores;
+	cores = azul;
+	Ao declarar uma enumeração, dizemos que determinada variável só poderá receber um valor que pertença 
+	a enumeração criada.
+
+
+- DECLARAR VARIÁVEIS EM C/C++
+	tipo nome_variavel = valor;
+
+- VARIÁVEIS LOCAIS E GLOBAIS
+	#include <iostream>
+	using namespace std;
+	int main () {
+	   //variáveis de scopo local
+	   int a, b;
+	   int c;
+	   //inicialização
+	   a = 10;
+	   b = 20;
+	   c = a + b;
+	   cout << c;
+	   return 0;
+	}
+
+	#include <iostream>
+	using namespace std;
+	//variável de scopo global
+	int g;
+	int main () {
+	   //variáveis de scopo local
+	   int a, b;
+	   //inicialização
+	   a = 10;
+	   b = 20;
+	   g = a + b;
+	   cout << g;
+	   return 0;
+	}	
