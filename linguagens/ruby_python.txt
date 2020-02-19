@@ -130,6 +130,38 @@
 	 gets recebe uma linha única de dados da entrada padrão – o teclado nesse caso – e atribui a string digitada pelo usuário à variável cidade.
 	 chomp é um método de string e retorna apenas as strings do que veio do teclado. Você deve ter percebido que gets retorna uma string e o caractere ‘\n’ (quebra de linha), enquanto chomp remove o ‘\n’.
 
+	PYTHON
+	#Entradas e saídas exemplos
+	name  = input("Qual o seu nome?") ou
+	print("Digite seu nome:")
+	nome = input()
+	Utilizar o comando .format() — Dentro de uma string, sinalizamos com {} os locais onde dados serão inseridos. No final da string, escrevemos .format() e colocamos a quantidade de argumentos conforme a quantidade de {} que utilizamos. Dessa forma podemos combinar dados de diversos tipos (int, float bool etc.), não só strings.
+	print 'Somos os {} que dizem "{}!"'.format('cavaleiros', 'Ni')
+	print '{0} and {1}'.format('spam', 'eggs') spam and eggs
+	print '{1} and {0}'.format('spam', 'eggs') eggs and spam
+	print 'Este {alimento} é {adjetivo}.'.format(alimento='spam', adjetivo='absolutamente horrível')
+	Este spam é absolutamente horrível.
+	Formatando a saída com %
+	print 'O valor de PI é aproximadamente %5.3f.' % math.pi  -> O valor de PI é aproximadamente 3.142.
+
+- CONVERSÕES DE TIPOS
+	RUBY
+		to_i   de String para Inteiro ex: "777".to_i => 777
+		to_f   de String para Flutuante ex: "777".to_f => 777.0
+		to_s   de Inteiro para String ex: 1.to_s => "1"
+		to_a   de Range para Array ex:  (1..4).to_a => [1,2,3,4]
+		to_sym de String para Simbolo ex: "nome".to_sym => :nome
+		join   de Array para String ex: ["vetor",1,"dois"].join(", ") => "vetor, 1, dois"
+
+	PYTHON
+	    int(valor/variável) 	— converte o argumento para um tipo inteiro.
+		float(valor/variável) 	— converte o argumento para o tipo ponto flutuante (racional).
+		bool(valor/variável) 	- converte o argumento para o tipo booleano, em que 1 (True) e 0 (False).
+		str(valor/variável) 	— converte o argumento para o tipo string.
+
+
+
+
 
 
 
