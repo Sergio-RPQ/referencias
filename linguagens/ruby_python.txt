@@ -1,0 +1,166 @@
+- VARIÁVEIS
+	RUBY
+	# Variáveis númericas:
+	idade 					= 25    			#inteiro
+	quantidade_habitantes 	= 6000000000000 	#inteiro
+	preco 					= 40.56 			#ponto flutuante
+	nome  					= 'Jorge Augusto' 	#String
+	existe_pagamento 		= true 				#Bollean true/false
+
+	#Tudo em Ruby é objeto, com isso podemos utilizar o .class para descobrir qual o tipo de uma variável
+	idade.class 				#Fixnum   -> inteiro
+	quantidade_habitantes.class #Fixnum   -> inteiro
+	preco.class 				#Float    -> Ponto flutuante
+	nome.class  				#String   -> String conjunto de caracteres
+	existe_pagamento.class 		#Bollean  -> TrueClass / FalseClass
+	nil.class 					#NilClass -> Representa um valor vazio
+
+	PYTHON
+	Tipos de dados básicos
+	Números: 			int, long, float, complex
+	Strings: 			str e unicode
+	Listas e tuplas:	list, tuple
+	Dicionários: 		dict
+	Arquivos: 			file
+	Booleanos: 			bool (True, False)
+	Conjuntos: 			set, frozenset
+	None: 				valor vazio
+
+	idade 					= 25    			#inteiro
+	quantidade_habitantes 	= 6000000000000 	#inteiro
+	preco 					= 40.56 			#ponto flutuante
+	nome  					= 'Jorge Augusto' 	#String
+	existe_pagamento 		= True 				#Bollean true/false
+	reais 					= None
+
+	type()
+	type("text")        # <class 'str'>
+	type(1)             # <class 'int'>
+	type(0.99)          # <class 'float'>
+	type(1) == int      # True
+	type(0.99) == float # True
+
+- STRINGS
+	RUBY
+	#Concatenação de strings (+)
+	nome 			= 'Jorge'
+	sobre_nome 		= 'Augusto'
+	separador 		= ' '
+	nome_completo 	= nome+separador+sobre_nome
+	#Interpolação de strings - Somente com aspas duplas
+	saudacao = "Seja bem vindo #{nome_completo}"
+	# TRABALHANDO COM SUBSTRINGS
+	nome = 'Jorge Augusto'
+	nome[0..2]     #Retorna os primeiros tres caracteres da string -> Jor
+	nome[-2..-1]   #Retorna os valores invertidos -> to
+	nome.slice(0..2)
+	nome.slice(-2..-1)
+
+	# Alguns métodos e truques com Strings
+	nome.size 			#retorna o comprimento da string
+	nome.upcase 		#retorna uma string toda em maiúscula
+	nome.downcase 		#retorna uma string toda em minúscula
+	nome.sub("t","d") 	#substitui a primeira ocorrência de t por d
+	nome.gsub("t","d") 	#substitui todas as ocorrências de t por d
+	nome.capitalize 	#Coloca a primeira em maiúscula
+	nome.reverse 		#Inverte a string
+	nome.split(" ") 	#Gera um array separando pelo caracter
+	nome.scan("Jor")    #Retorna array com a ocorrência procurada no texto
+	nome.scan(/^o/) 
+	nome.scan(/./)
+
+	PYTHON
+	#Concatenamos strings com o sinal +
+	"Spam " + "and" + " eggs"
+	#Quando concatenamos com um número, precisamos fazer a conversão.
+	"The value of pi is around " + str(3.14)
+	#Escapamos (scape) caracters com o sinal \
+	'There's a snake in my boot!'  # errado
+	'There\'s a snake in my boot!' # correto
+	#Métodos básicos de string
+	len() 		mostra o tamanho da string
+	lower() 	caixa baixa
+	upper() 	caixa alta
+	str() 		converte em string
+	isalpha() 	retorna False se a string contiver algum caracter que não seja letras
+	strip() 	Retira espaços em branco no começo e no fim
+	join() 		Junta cada item da string com um delimitador especificado. EX: ", ".join("abc") # 'a, b, c'
+	split()		Separa uma string conforme um delimitador. 
+
+	Exemplo, "flavio.upper()" equivale a FLAVIO.
+	#Acessando pelo index
+	+---+---+---+---+---+---+
+	| p | y | t | h | o | n |
+	+---+---+---+---+---+---+
+  	0   1   2   3   4   5
+	"python"[0] # 'p'
+	"python"[1] # 'y'
+	"python"[2] # 't'
+	"python"[3] # 'h'
+	"python"[4] # 'o'
+	"python"[5] # 'n'
+	#Percorrendo strings (string lopping). String é um objeto iterável.
+	for letter in "python":
+    	print(letter)
+    #podemos alterar seu valor atribuindo um valor através do índice.
+	palavra = "foo"
+	palavra[1] = "r"	
+	#Podemos fatiar a string.
+	s = "flavio"
+	s[1:4] 	# 'lav'
+	s[0:3] 	# 'fla'
+	s[:3]  	# 'fla'
+	s[:]  	# 'flavio'
+	s[0:] 	# 'flavio'
+	#Pesquisando a string. Podemos pesquisar um string com o operador in, exemplo
+	"b" in "abc"     # True
+	"d" in "abc"     # False
+	"d" not in "abc" # True
+	"b" not in "abc" # False
+- ENTRADAS E SAÍDAS
+	RUBY
+	#Saída padrão (monitor) 	-> puts "\nDigite o valor do desconto:"
+	#Entrada padrão (teclado) 	-> desconto = gets
+	#Exemplo2: gets e chomp
+	 puts "Em qual cidade você está?"
+	 STDOUT.flush
+	 cidade = gets.chomp
+	 puts "A cidade é " + cidade
+	 STDOUT é uma constante global que é a saída padrão atual do programa. flush (fluir) limpa qualquer dado armazenado no buffer (área de armazenamento temporário de dados) de entrada e saída do Ruby. O uso não é mandatório, mas recomendado.
+	 gets recebe uma linha única de dados da entrada padrão – o teclado nesse caso – e atribui a string digitada pelo usuário à variável cidade.
+	 chomp é um método de string e retorna apenas as strings do que veio do teclado. Você deve ter percebido que gets retorna uma string e o caractere ‘\n’ (quebra de linha), enquanto chomp remove o ‘\n’.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
