@@ -1,3 +1,7 @@
+"Um passo é o suficiente para mim"
+"Por que se preocupar com o amanhã, se ele acaba depois de amanhã?"
+"By: Pica Pau"
+
 - VARIÁVEIS
 	RUBY
 	# Variáveis númericas:

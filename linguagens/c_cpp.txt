@@ -1,3 +1,7 @@
+"Um passo é o suficiente para mim"
+"Por que se preocupar com o amanhã, se ele acaba depois de amanhã?"
+"By: Pica Pau"
+
 - ESTRUTURA BÁSICA EM C
 arquivo: ola.c
 #include <stdio.h>
@@ -175,4 +179,4 @@ EX:
                                                            age de depois a string “anos de idade”
                                                         */
 
-    
+
