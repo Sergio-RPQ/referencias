@@ -1,6 +1,7 @@
 "Um passo é o suficiente para mim"
 "Por que se preocupar com o amanhã, se ele acaba depois de amanhã?"
 "By: Pica Pau"
+"Luiz Carlos Teixeira Da Silva"
 
 - ESTRUTURA BÁSICA EM C
 arquivo: ola.c
@@ -24,9 +25,27 @@ int main() {
 	$ g++ ola.cpp
 	$ ./ola.out
 	Olá mundo!
+
 - COMPILAR E EXECUTAR EM C
 	$gcc ola.c
 	$./ola.o
+	$gcc prog.c -o prog 
+		O parâmetro -o indica o arquivo de saída da compilação com o executável do programa
+	Você precisa especificar o nome do arquivo executável de saída pois o padrão, por razões históricas, é usar o arquivo a.out. Em geral, usamos o mesmo nome do arquivo de código, tirando a extensão .c.
+	- Links com detalhes sobre compilação
+		https://www.ime.usp.br/~pf/algoritmos/apend/compilation.html
+		https://pt.wikibooks.org/wiki/Programar_em_C/Makefiles
+		https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
+		http://www.inf.ufes.br/~pdcosta/ensino/2019-2-estruturas-de-dados/material/GuiaRapido_EDI.pdf
+		http://orion.lcg.ufrj.br/compgraf1/downloads/MakefileTut.pdf
+		https://blog.pantuza.com/tutoriais/como-funciona-o-makefile
+		https://www.mat.uc.pt/~pedro/lectivos/ProgramacaoOrientadaObjectos/tutorialMakefilesPT.pdf
+		https://www.embarcados.com.br/introducao-ao-makefile/
+		https://gist.github.com/mauriciopoppe/de8908f67923091982c8c8136a063ea6
+		https://www.partow.net/programming/makefile/index.html
+		http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+		http://resources.esri.com/help/9.3/arcgisengine/com_cpp/Cpp/reference/Makefile.Linux.htm
+
 
 - TIPOS BÁSICOS EM C
 char   : armazena caracteres ou números literais Ex: ‘a’    ‘1’  ‘\n’
