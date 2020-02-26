@@ -1,0 +1,24 @@
+### REFERENCIA GIT
+
+init 		-> Cria o diretório local .git como novo repositório
+status 		-> Avalia estado dos arquivos no diretório de trabalho e no índice
+add 		-> Adiciona ao índice
+rm --cached -> Retira arquivo novo do índice
+reset HEAD  -> Retira arquivo modificado do índice
+checkout    -> Reinicia arquivo modificado fora do índice
+commit      -> Grava conteúdo do índice e coloca no repo
+log         -> mostra o histórico de commits no repo
+
+
+#Primeiro fluxo básico para um arquivo
+
+			UNTRACKED 				  INDEX 			   REPO
+				|		  add			|		commit		|
+				|---------------------->|------------------>|
+				|		rm --cached		|					|
+				|<----------------------|					|
+				MODIFIED				|					|
+				|		  add			|		commit		|
+				|---------------------->|------------------>|
+	checkout	|		reset HEAD		|					|
+	<-----------|<----------------------|					|
