@@ -61,6 +61,22 @@ git stash pop stash@{0} -> Aplica o stash específico e retira ele do stash.
 
 git stash drop stash@{0} -> Retira um stash específico da lista.
 
+BRANCHS
+git branch 					-> mostra todos os branchs criados
+git checkout -b nome_branch -> cria um novo branch
+git checkout nome_branch    -> vai para o branch 
+
+
+gitk --all & -> abre o gitk interface grafica
+
+git merge nome_da_branch -> Vai trazer da nome_da_branch, as alterações para a branch atual
+
+git rebase master -> Faz o rebase na branch atual apartir do master por exemplo.
+
+git branch -D nome_da_branch -> Deleta a branch em questão
+
+git merge nome_branch --squash -> Mistura vários commits em um só.
+
 
 
 
