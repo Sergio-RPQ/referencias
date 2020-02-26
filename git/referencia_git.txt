@@ -1,13 +1,13 @@
 ### REFERENCIA GIT
 
-init 		-> Cria o diretório local .git como novo repositório
-status 		-> Avalia estado dos arquivos no diretório de trabalho e no índice
-add 		-> Adiciona ao índice
-rm --cached -> Retira arquivo novo do índice
-reset HEAD  -> Retira arquivo modificado do índice
-checkout    -> Reinicia arquivo modificado fora do índice
-commit      -> Grava conteúdo do índice e coloca no repo
-log         -> mostra o histórico de commits no repo
+init 		  -> Cria o diretório local .git como novo repositório
+status 		  -> Avalia estado dos arquivos no diretório de trabalho e no índice
+add 		  -> Adiciona ao índice
+rm --cached   -> Retira arquivo novo do índice
+reset HEAD    -> Retira arquivo modificado do índice
+checkout  --  -> Reinicia arquivo modificado fora do índice
+commit        -> Grava conteúdo do índice e coloca no repo
+log           -> mostra o histórico de commits no repo
 
 
 #Primeiro fluxo básico para um arquivo
@@ -22,3 +22,57 @@ log         -> mostra o histórico de commits no repo
 				|---------------------->|------------------>|
 	checkout	|		reset HEAD		|					|
 	<-----------|<----------------------|					|
+
+
+#OUTROS RECURSOS
+git add -i -> Abre o modo interativo para adicionar e remover ao índice
+				Digitamos o número da opção desejada.
+		1 - status, 2 - update, 3 - revert, 4 - add untracked, 5 - patch, 6 - diff,
+		7 - quit, 8 - help
+
+git commit -m "" --amend -> Refaz o commit anterior com o conteúdo que esta no índice.
+							Obs: não fazer isso após enviar para o remoto.
+
+git commit -a -m "" -> Commit adicionando ao índice arquivos que foram modificados e não estão 							no índice.
+
+git log --stat -> Mostra pra cada commit o que foi modificado
+
+git reset HEAD~1 --hard -> Perde um commit pra trás e os arquivos novos e modificados.
+
+git reflog -> Exibe os commits em ordem, inclusive os apagados com --hard
+
+git merge 607cba4 -> Trás de volta o commit apagado com --hard.
+
+git reset HEAD~1 --soft -> Perde um commit pra trás sem perder os arquivos novos e modificados.
+
+git stash -> Pega os arquivos do índice e coloca numa área aparte para liberar o índice para 				um outro trabalho sem perder aquilo que estava no índice.
+
+git stash list -> Mostra os stashs armazenados no momento.
+
+git stash apply -> Aplica o último stash criado.
+
+git stash clear -> Limpa os stash
+
+git stash save "nome_para_stash" -> Salva a stash com um nome.
+
+git stash apply stash@{0} -> Aplica o stash específico
+
+git stash pop stash@{0} -> Aplica o stash específico e retira ele do stash.
+
+git stash drop stash@{0} -> Retira um stash específico da lista.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
