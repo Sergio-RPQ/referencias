@@ -1,0 +1,108 @@
+
+FINANCEIRO
+    Plano de contas
+    Contas a pagar
+    Contas a receber
+    Fluxo de caixa
+    Aplicações e empréstimos
+    Tesouraria
+    Posição de clientes
+    Posição de fornecedores
+    Análises gerenciais
+
+CONTABILIDADE
+    Plano de contas gerencial multiestruturado (9 níveis)
+    Gestão orçamentária
+    Suporte e conversão a 99 moedas
+    Contabilização em até 9 tipos de saldos
+    Rastreamento contábil
+    Visões gerenciais (DRE, DOAR, BP e Fluxo de Caixa)
+    Livros razão e diário
+    Consolidação de grupo de empresas, unidades e filiais
+    Lançamentos intercompany
+    Compliance FAS52, USGAAP, IFRS e IAS
+
+FISCAL
+    Apuração de Impostos (ISS, ICMS, ST, IPI, PIS, COFINS, CSLL)
+    Geração de demonstrativos
+    Geração de obrigações eletrônicas
+    Obrigações acessórias
+    Livros fiscais
+    Geração ECF, ECD, SPED Fiscal, SPED contábil e contribuições, eSocial e REINF
+    Mensageria de documentos fiscais eletrônicos (NF-e, CT-e, NFS-e, CL-e, MDF-e, NFC-e, MD-e)
+
+ESTOQUE/CUSTO
+    Movimentação
+    Gestão de inventário
+    Rastreabilidade
+    Custo médio
+    Consulta de estoque
+
+FATURAMENTO
+    Políticas comerciais
+    Pedido de vendas
+    Nota fiscal de saída
+    Interface NF-e
+    Interface NFS-e
+    Análises gerenciais
+
+COMPRAS
+    Solicitação de compras
+    Cotação
+    Análise de cotações
+    Pedido de compra
+    Alçadas de aprovação de compras
+    Conferência física
+    Nota fiscal de entrada
+
+JURÍDICO
+    Administração das contingências
+    Monitoramento das publicações, andamentos e distribuições de processos
+    Gestão dos contratos
+    Gestão de indicadores
+    Gestão de procurações e documentos societários
+    Conferência física
+    Relacionamento com escritórios parceiros e fornecedores, criando uma maior sinergia entre as áreas
+
+CRM
+    Oportunidade de vendas
+    Campanhas
+    Evolução de contas
+
+CALLCENTER
+    Telecobrança
+    Televendas e teleatendimento
+
+VAREJO LOJA
+    Planejamento/Controles
+    Estilo / Planejamento / Compras / Gestão de Preços / Gestão da Produção
+    Produtos/Clientes
+    Recebimento / Armazenagem / Expedição / Transporte / Estoque
+    Omnichannel/Relacionamento/Serviços
+    Cadastro de clientes
+    Planejamento/Controles
+        Planejamento estratégico
+        Planejamento orçamentário
+        Planejamento das áreas funcionais
+        Planejamento da expansão
+        Gestão de indicadores
+        Auditoria de custos
+        Gerenciamento de informações de mercado
+        Gerenciamento da marca
+        Inovação
+
+MANUFATURA  
+    Ciclo de Vida do Produto
+    Vendas
+    Suprimentos
+    Planejamento
+    Estoque
+    Produção
+    Logística
+    Manutenção
+    Ciclo de Vida do Produto
+        Engenharia
+        Desenvolvimento de produtos
+        Configurador de produtos
+        Gestão de projetos
+

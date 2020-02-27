@@ -77,6 +77,10 @@ git branch -D nome_da_branch -> Deleta a branch em questão
 
 git merge nome_branch --squash -> Mistura vários commits em um só.
 
+git rebase master -> Vai atualizar a branch atual apartir do master trazendo o que esta no 							master para a branch atual. Possibilidade de conflito.
+
+Em caso de conflito deve-se editar o arquivo onde encontra-se o conflito, decidindo qual trecho de código será utilizado. Em seguida usar: 
+git rebase --continue
 
 
 
