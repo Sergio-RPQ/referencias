@@ -1,0 +1,14 @@
+COMÉRCIO VAREJISTA
+	-Materiais para consumo
+	-Produtos para revenda
+
+INDÚSTRIA
+	-Materiais para consumo
+	-Matérias prima para manufatura
+
+SERVIÇOS
+	-Materiais para consumo
+	-Produtos necessários para prover os serviços
+
+Setores da economia
+	https://www.infoescola.com/economia/setor-terciario/
