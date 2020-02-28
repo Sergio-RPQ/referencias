@@ -1,0 +1,22 @@
+COMÉRCIO VAREJISTA
+	-Cadastro
+		Cadastramos o produto/material consumo com suas características, podendo associar fornecedores, preços médios, e outros como fabricante, modelo etc. Geralmente utilizaremos um tabela específica do sistema para esse cadastro.
+
+	-Quantidade em estoque
+		Após o cadastro, utilizamos outra tabela com a função de armazenar informações de quantidade armazenada em estoque e outras informações relevantes como lote.	
+
+
+	-Movimentação de estoque
+
+		-Material de consumo
+			-Entradas 
+				Compra de material de consumo
+			-Saídas
+				Utilização dos materiais nas operações da empresa
+
+		-Produtos para revenda(Mercadorias)
+			-Entradas
+				Compra de mercadorias para revenda
+			-Saídas
+				Venda de mercadoria em loja
+
